@@ -14,6 +14,9 @@ async function getPlanets() {
 
     document.querySelectorAll('.navbar-nav li').forEach(link => {
         link.addEventListener('click', e =>{
+            document.querySelector('.navbar-nav').querySelector('.nav-border').classList.remove('nav-border')
+            link.classList.add('nav-border')
+
             const temp = document.querySelector('#planet-container')
             if (document.querySelectorAll('.active').length > 0) {
                 document.querySelector('.active').classList.remove('active')
@@ -26,11 +29,5 @@ async function getPlanets() {
 }
 getPlanets()
 
-document.querySelectorAll('li').forEach( el => {
-    let nav = document.querySelector('.navbar-nav')
-    el.addEventListener('click', e => {
-        nav.querySelector('.nav-border').classList.remove('nav-border')
-        el.classList.add('nav-border')
-    })
-})
+
 
