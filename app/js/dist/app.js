@@ -87,7 +87,7 @@ function _getPlanets() {
             target = document.querySelector('#info');
             target.innerHTML += template(planets);
             document.querySelectorAll('.navbar-nav li').forEach(function (link) {
-              link.addEventListener('click', function (e) {
+              link.addEventListener('click', function () {
                 borderAndActiveclass(link);
                 document.querySelector('#' + link.dataset.id).classList.add('active');
               });

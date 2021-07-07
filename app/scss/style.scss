@@ -33,6 +33,15 @@ body {
     }
   }
 
+  .home {
+    text-decoration: none;
+    color: $content-color;
+
+    &:hover {
+      color: red;
+    }
+  }
+
   .nav-border {
     border-bottom: 2px solid red;
   }

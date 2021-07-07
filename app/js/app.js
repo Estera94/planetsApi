@@ -42,7 +42,7 @@ async function getPlanets() {
     target.innerHTML += template(planets)
 
     document.querySelectorAll('.navbar-nav li').forEach(link => {
-        link.addEventListener('click', e =>{
+        link.addEventListener('click', () =>{
             borderAndActiveclass(link)
             document.querySelector('#' + link.dataset.id).classList.add('active')
         })
