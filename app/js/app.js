@@ -49,6 +49,3 @@ async function getPlanets() {
     })
 }
 getPlanets()
-
-
-
